@@ -1,0 +1,414 @@
+.Selected-Item {
+  text-align: center;
+  img {
+    display: block;
+    width: 200px;
+    margin: 40px auto;
+  }
+  h1 {
+    color: red;
+    padding: 20px 0;
+  }
+  .desc {
+    font-size: 20px;
+    padding: 15px 0;
+  }
+  .price {
+    font-weight: bold;
+    padding-top: 15px;
+    font-size: 20px;
+  }
+  i {
+    font-size: 40px;
+    cursor: pointer;
+    position: absolute;
+    right: 10%;
+  }
+  @media (max-width: 767px) {
+    .img-fluid {
+      width: 100%;
+      margin-top: 50px;
+    }
+    i {
+      top: 10px;
+      right: 10px;
+    }
+  }
+}
+
+.S-Shop {
+  padding: 50px 0;
+  .container-fluid {
+    padding: 0;
+  }
+  .ToCart {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    font-size: 40px;
+    z-index: 5;
+    color: black;
+    &::before {
+      content: attr(data-cart);
+      position: absolute;
+      font-size: 17px;
+      text-align: center;
+      background-color: red;
+      color: white;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      top: 8px;
+      left: 29px;
+    }
+  }
+  h2 {
+    background-color: $purple-color;
+    padding: 15px 40px 10px;
+    color: white;
+  }
+  .username {
+    color: #1b47d2;
+    padding: 15px 0;
+    display: none;
+  }
+  .search-card {
+    width: 60%;
+    margin: auto;
+  }
+  form {
+    display: flex;
+    // justify-content: center;
+    margin: 20px 0;
+    .form-control {
+      height: 50px;
+      width: 75%;
+    }
+    #submit {
+      width: 10%;
+      margin-right: 15px;
+    }
+  }
+
+  .product {
+    background-color: #dddddd59;
+    border: 2px solid transparent;
+    width: 15%;
+    margin: 40px auto;
+    transition: 0.3s;
+    cursor: pointer;
+    text-align: center;
+    // z-index: -1;
+    padding: 30px 10px;
+    position: relative;
+    .lg-screen {
+      height: 128px;
+    }
+    .head {
+      font-size: 38px;
+      color: red;
+      padding: 24px 0 10px;
+    }
+    .desc {
+      padding: 0 0 10px 0;
+      font-size: 17px;
+      color: #000000b0;
+    }
+    .price {
+      // font-weight: bold;
+      color: #888;
+      font-size: 25px;
+      padding: 10px 10px 0 0;
+    }
+    .buy {
+      background-color: $purple-color;
+      padding: 10px 0;
+      width: 150px;
+      margin: 10px auto 0;
+      color: white;
+      font-size: 19px;
+      transition: 0.3s;
+      user-select: none;
+    }
+    .discount {
+      width: 90px;
+      color: white;
+      position: absolute;
+      left: -29px;
+      height: 20px;
+      font-family: fantasy;
+      font-weight: bold;
+      top: 3px;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      border-bottom: 27px solid $purple-color;
+      border-left: 26px solid transparent;
+      border-right: 26px solid transparent;
+      &::before {
+        content: "";
+        border-color: transparent $dark-color $dark-color transparent;
+        border-width: 3px;
+        border-style: solid;
+        display: block;
+        position: absolute;
+        bottom: -2px;
+        left: -25px;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        top: 24px;
+      }
+      &::after {
+        content: "";
+        border-color: transparent $dark-color $dark-color transparent;
+        border-width: 3px;
+        border-style: solid;
+        display: block;
+        position: absolute;
+        transform: rotate(45deg);
+        right: -25px;
+        top: 24px;
+      }
+    }
+    &:hover {
+      box-shadow: 3px 3px 8px #00000038;
+      background-color: #dddddda3;
+      .buy {
+        background-color: white;
+        color: $purple-color;
+      }
+    }
+  }
+
+  .header {
+    font-size: 50px;
+    margin-top: 50px;
+  }
+  .offer {
+    padding: 0;
+    overflow: hidden;
+    width: 24%;
+    height: 219px;
+    margin: 7px auto;
+    text-align: center;
+    .custom-img {
+      width: 150%;
+      height: auto;
+    }
+    .head {
+      font-size: 35px;
+      font-weight: bold;
+      border-bottom: 3px solid;
+      width: fit-content;
+      font-weight: bold;
+      padding: 5px;
+      margin: auto;
+    }
+    .desc {
+      font-size: 21px;
+      padding: 28px 5px 0;
+    }
+  }
+  .text-card-01 {
+    background-color: black;
+    color: white;
+  }
+  .text-card-02,
+  .text-card-03 {
+    background-color: $purple-color;
+    color: white;
+  }
+  .text-card-04 {
+    background-color: white;
+    color: black;
+  }
+  .text-card-01,
+  .text-card-02,
+  .text-card-03,
+  .text-card-04 {
+    padding: 30px 10px;
+  }
+  .colom {
+    margin: 20px 0;
+    display: flex;
+    .cat,
+    .prc {
+      width: 50%;
+      padding: 0 50px;
+    }
+  }
+  .AllProducts {
+    margin: 50px auto;
+    h2 {
+      padding: 25px 20px 10px 0;
+      background-color: $purple-color;
+      color: white;
+    }
+    .relivant {
+      width: 23%;
+      border-radius: 20px;
+      cursor: pointer;
+      margin: 20px auto;
+      border: 2px solid transparent;
+      text-align: center;
+      border: 1px solid rgb(217, 217, 217);
+      padding: 0;
+      .img-section {
+        background-color: $purple-color;
+        padding: 30px;
+        border-radius: 20px;
+        transition: 0.3s;
+      }
+      img {
+        display: block;
+        margin: auto;
+        height: 220px;
+        transition: 0.3s;
+      }
+      h1 {
+        padding: 30px 0 10px 0;
+        color: red;
+        font-size: 2rem;
+      }
+      .colom {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        margin: 10px 0;
+      }
+      .price {
+        font-weight: bold;
+        font-size: 25px;
+      }
+      .buy {
+        border: 1px solid $purple-color;
+        width: 100px;
+        color: $purple-color;
+        padding: 10px 0 0 0;
+        font-size: 19px;
+        cursor: pointer;
+        transition: 0.3s;
+        user-select: none;
+      }
+      &:hover {
+        .img-section {
+          background-color: #6800ff5e;
+        }
+        img {
+          transform: scale(1.3);
+        }
+        .buy {
+          background-color: $purple-color;
+          color: white;
+        }
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    .container-fluid {
+      padding-right: var(--bs-gutter-x, 0.75rem);
+      padding-left: var(--bs-gutter-x, 0.75rem);
+    }
+    .box-1 {
+      .product {
+        width: 40%;
+      }
+    }
+    .offer {
+      width: 40%;
+    }
+    .AllProducts {
+      .relivant {
+        width: 40%;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .box-1 {
+      .product {
+        border-radius: 10px;
+        margin: 20px auto;
+        width: 36%;
+        .head {
+          font-size: 25px;
+        }
+        .desc {
+          color: #888;
+        }
+        .buy {
+          margin: 5px auto;
+          margin-bottom: 0;
+          width: 120px;
+          border-radius: 10px;
+        }
+        // .price {
+        //   color: red;
+        // }
+      }
+    }
+    .offer {
+      width: 100%;
+      margin: 0;
+      height: auto;
+    }
+    .text-card-01,
+    .text-card-02,
+    .text-card-03,
+    .text-card-04 {
+      height: 200px;
+    }
+    .search-card {
+      width: 100%;
+      form {
+        justify-content: space-between;
+        #submit {
+          width: 23%;
+          margin: 0;
+        }
+      }
+    }
+    .username {
+      display: block;
+    }
+    .AllProducts {
+      .relivant {
+        width: 40%;
+        .img-section {
+          display: flex;
+          align-items: center;
+          height: 230px;
+        }
+        img {
+          height: auto;
+        }
+        h1 {
+          font-size: 25px;
+        }
+        .colom {
+          display: block;
+        }
+        .price {
+          font-size: 20px;
+          padding: 5px 0;
+        }
+        .buy {
+          margin: auto;
+        }
+      }
+    }
+  }
+  // @media (max-width: 575px) {
+  //   .box-1 {
+  //     .product {
+  //       margin: 20px auto;
+  //       width: 36%;
+  //       .head {
+  //         font-size: 25px;
+  //         font-weight: bold;
+  //       }
+  //       .desc {
+  //         color: #888;
+  //       }
+  //     }
+  //   }
+  // }
+}

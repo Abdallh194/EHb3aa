@@ -1,0 +1,51 @@
+header {
+  background-color: $purple-color;
+  .text-Card {
+    color: white;
+    margin: 50px auto;
+    text-align: center;
+    padding: 60px 20px;
+    .top-head,
+    .bottom-head {
+      font-size: 38px;
+    }
+    .main-head {
+      font-size: 90px;
+      font-family: $header-font;
+      padding: 10px 0;
+      font-weight: bold;
+      i {
+        color: $dark-color;
+      }
+    }
+    .start {
+      width: 200px;
+      padding: 10px 0;
+      background-color: $dark-color;
+      margin: 20px auto;
+      color: white;
+      transition: 0.1s;
+      border-radius: 4px;
+      font-size: 23px;
+      &:hover {
+        background-color: #6c009f;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    // height: 500px;
+    .text-Card {
+      margin-top: 20px;
+      .main-head {
+        font-size: 50px;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    // height: 900px;
+    .text-Card {
+      padding-bottom: 30px;
+      margin-bottom: 0;
+    }
+  }
+}

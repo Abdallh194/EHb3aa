@@ -1,0 +1,27 @@
+$purple-color: #ab71ff;
+$dark-color: #15001f;
+@import url("https://fonts.googleapis.com/css2?family=Alkalami&display=swap"); // LOGO FONT
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap"); // header font
+@import url("https://fonts.googleapis.com/css2?family=Gulzar&display=swap"); //main font
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap"); // custom font
+$logo-font: "Alkalami", serif;
+$header-font: "Reem Kufi", sans-serif;
+$main-font: "Gulzar", serif;
+$custom-font: "Baloo Bhaijaan 2", cursive;
+@import "Component/Pages/Header/Header";
+@import "Component/Pages/Navbar/Navbar";
+@import "Component/Pages/About/About";
+@import "Component/Pages/Shop/Shop";
+@import "Component/Pages/Cart/Cart";
+@import "Component/Pages/Log/Login";
+body {
+  direction: rtl;
+  overflow-x: hidden;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+* {
+  font-family: $main-font;
+}

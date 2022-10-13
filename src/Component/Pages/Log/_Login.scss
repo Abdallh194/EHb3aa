@@ -1,0 +1,90 @@
+.Login,
+.Register {
+  form {
+    width: 40%;
+    position: relative;
+    margin: 50px auto;
+    background-color: $purple-color;
+    color: white;
+    padding: 40px 30px 60px 30px;
+    border-radius: 20px;
+    .error {
+      border-color: red;
+      border-width: 3px;
+    }
+    .head {
+      font-size: 25px;
+      padding: 15px 0;
+    }
+    input {
+      margin: 20px auto;
+      height: 50px;
+    }
+    .logError {
+      color: #0aff00;
+    }
+    .newResister {
+      font-size: 20px;
+      font-family: $custom-font;
+      span {
+        display: inline;
+        color: black;
+        cursor: pointer;
+      }
+    }
+    .copy {
+      text-align: center;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      padding: 15px 0 0 0;
+      left: 50%;
+      transform: translateX(-50%);
+      span {
+        color: black;
+        font-family: $header-font;
+        cursor: pointer;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    form {
+      padding-bottom: 90px;
+      width: 95%;
+    }
+  }
+}
+.loginsucss {
+  margin-top: 150px;
+  text-align: center;
+
+  color: red;
+  .check {
+    color: green;
+    font-size: 50px;
+  }
+  a {
+    font-size: 25px;
+    margin-top: 40px;
+    background-color: $purple-color;
+    color: white;
+    width: 150px;
+    margin: 30px auto;
+    padding: 15px 0 10px 0;
+  }
+}
+.Selected {
+  background-color: rgb(35, 84, 245) !important;
+  width: 100%;
+  color: white !important;
+  border: none !important;
+  border-radius: 10px;
+  i {
+    display: none;
+  }
+}
+.SelectedCart {
+  border-color: rgb(35, 84, 245) !important;
+  background-color: transparent !important;
+  transition: 0.1s;
+}

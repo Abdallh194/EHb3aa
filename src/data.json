@@ -1,0 +1,62 @@
+[
+  {
+    "id": "37",
+    "title": "أدوات التجميل",
+    "desc": "كل ملزمات التجميل متوفره الان",
+    "images": "/img/most-sale_01.png",
+    "price": 600,
+    "discount": "8 %",
+    "categoires": "تجميل",
+    "Quantity": 1
+  },
+  {
+    "id": "38",
+    "title": "احدث السيارات",
+    "desc": "متوفر احدث السيارات ولدينا عروض خاصه",
+    "images": "/img/most-sale_02.png",
+    "discount": "20 %",
+    "price": 300000,
+    "categoires": "سيارات",
+    "Quantity": 1
+  },
+  {
+    "id": "39",
+    "title": "اجهزة الكومبيوتر",
+    "desc": "احدث اجهزه الكومبيوتر وملزماتها",
+    "images": "/img/most-sale_03.png",
+    "price": 15500,
+    "discount": "14 %",
+    "categoires": "اجهزة",
+    "Quantity": 1
+  },
+  {
+    "id": "40",
+    "title": "مشروبات خاصه",
+    "desc": "هتلاقي كل المشروبات والاكلات عندنا",
+    "images": "/img/most-sale_04.png",
+    "discount": "5 %",
+    "price": 80,
+    "categoires": "مشروبات",
+    "Quantity": 1
+  },
+  {
+    "id": "41",
+    "title": " أثاث المنزل",
+    "desc": "كل ملزمات المنزل متوفره الان",
+    "images": "/img/most-sale_05.png",
+    "price": 16000,
+    "discount": "30 %",
+    "categoires": "المنزل",
+    "Quantity": 1
+  },
+  {
+    "id": "42",
+    "title": "الادوات الكهربائية",
+    "desc": "كل ملزمات البيت متوفره الان",
+    "images": "/img/most-sale_06.png",
+    "discount": "17 %",
+    "price": 7000,
+    "categoires": "اجهزة",
+    "Quantity": 1
+  }
+]
