@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/EHb3aa/static/css/main.c6aaa2ce.css",
+    "main.js": "/EHb3aa/static/js/main.e2fb9df3.js",
+    "static/media/About.jpg": "/EHb3aa/static/media/About.5be1f427dedf9321a4f1.jpg",
+    "static/media/offers_01.jpg": "/EHb3aa/static/media/offers_01.a3cf705d4749fa5eea1f.jpg",
+    "static/media/header.png": "/EHb3aa/static/media/header.71a2b9a569075cd69e4c.png",
+    "static/media/nav.png": "/EHb3aa/static/media/nav.c52f125454692a01829d.png",
+    "static/media/offers_04.jpg": "/EHb3aa/static/media/offers_04.e2c704dda8ee59ccfd07.jpg",
+    "static/media/offers_03.jpg": "/EHb3aa/static/media/offers_03.ad3bab1a983aea5c645e.jpg",
+    "static/media/offers_02.jpg": "/EHb3aa/static/media/offers_02.699698e1f65f89aa35c7.jpg",
+    "index.html": "/EHb3aa/index.html",
+    "main.c6aaa2ce.css.map": "/EHb3aa/static/css/main.c6aaa2ce.css.map",
+    "main.e2fb9df3.js.map": "/EHb3aa/static/js/main.e2fb9df3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c6aaa2ce.css",
+    "static/js/main.e2fb9df3.js"
+  ]
+}
